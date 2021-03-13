@@ -1,0 +1,198 @@
+article
+  .post-content
+    margin-bottom 30px
+    position relative
+  header
+    time
+      font 0.9em font-title
+      margin-bottom 5px
+      display block
+      line-height 1
+      a
+        color var(--color-font)
+    .title
+      font-weight normal
+      a
+        color var(--color-font)
+        &:hover
+          text-decoration underline
+
+  .entry
+    text-align justify
+    -moz-hyphens auto
+    -webkit-hyphens auto
+    -ms-hyphens auto
+    hyphens auto
+    line-height 1.6
+    p, blockquote, ul, ol, dl, table, iframe, h3, h4, h5, h6, .video-container
+      margin-top 15px
+    a
+      color var(--color-font)
+      text-decoration underline
+      &:hover
+        font-weight bold
+    table
+      border-collapse collapse
+      border-spacing 0
+      empty-cells show
+      border 1px solid var(--color-basic)
+      width 100%
+      th
+        white-space nowrap
+        color var(--color-font)
+        font-weight 600
+        background var(--color-background)
+      td, th
+        border 1px solid var(--color-basic)
+        padding 8px 16px
+        text-align left
+    figure.highlight
+      table
+        border none
+        width auto
+        border-collapse separate
+    blockquote
+      border-top 1px solid var(--color-basic)
+      border-bottom 1px solid var(--color-basic)
+      font-style italic
+      font-family font-serif
+      font-size 1.2em
+      padding 0 30px 15px
+      text-align center
+      footer
+        border-top none
+        font-size 0.8em
+        line-height 1
+        margin 20px 0 0
+        padding-top 0
+        cite
+          &:before
+            content '—'
+            color var(--color-meta)
+            padding 0 0.5em
+    code, pre
+      font-family font-mono
+    code
+      background var(--color-background)
+      color var(--color-code)
+      padding 0 5px
+      margin 0 2px
+      font-size 0.9em
+      border 1px solid var(--color-basic)
+      border-radius 3px
+    pre
+      background var(--color-background)
+      border 1px solid var(--color-basic)
+      margin-top 15px
+      overflow auto
+      padding 7px 15px
+      border-radius 2px
+      code
+        background none
+        padding 0
+        margin 0
+        border none
+        border-radius 0
+    ul, ol, dl
+      margin-left 30px
+      ul, ol, dl
+        margin-top 0
+    h1, h2
+      font-weight normal
+      border-bottom 1px solid var(--color-basic)
+      padding-bottom 10px
+      margin-top 20px
+    h3, h4, h5, h6
+      font-weight normal
+    .mermaid
+      border none
+      text-align center
+      svg
+        height 100%
+    img, video
+      display block
+      margin 0 auto
+      max-width 100%
+      height auto
+      border none
+    iframe
+      border none
+    .caption
+      display block
+      margin-top 5px
+      color var(--color-meta)
+      position relative
+      font-size 0.9em
+      padding-left 25px
+      &:before
+        content '\f040'
+        position absolute
+        font 1.3em font-icon
+        position absolute
+        left 0
+        top 3px
+    .video-container
+      position relative
+      padding-bottom 56.25%
+      padding-top 30px
+      height 0
+      overflow hidden
+      iframe, object, embed
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        margin-top 0
+    .pullquote
+      float right
+      border none
+      padding 0
+      margin 1em 0 0.5em 1.5em
+      text-align left
+      width 45%
+      font-size 1.5em
+
+  footer
+    margin-top 15px
+    padding-top 10px
+    border-top 1px solid var(--color-basic)
+    color var(--color-meta)
+    font-size 0.9em
+    line-height 16px
+    position relative
+    min-height 16px
+    a
+      font-weight bold
+      color var(--color-font)
+      &:hover
+        text-decoration underline
+      &:before
+        font 1.1em font-icon
+        padding-right 10px
+        vertical-align middle
+      &.more-link
+        &:before
+          content '\f054'
+    .categories, .tags
+      color var(--color-font)
+      position relative
+      padding-left 25px
+      margin 5px 0
+      &:before
+        position absolute
+        font 1.1em font-icon
+    .categories
+      &:before
+        content '\f07b'
+        top 2px
+        left 1px
+    .tags
+      &:before
+        content '\f02b'
+        top 3px
+        left 2px
+    .addthis
+      margin-top 15px
+      iframe
+        margin-top 0

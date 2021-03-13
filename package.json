@@ -1,0 +1,24 @@
+{
+  "name": "unbiniliums-blog",
+  "version": "5.4.0",
+  "private": true,
+  "scripts": {
+    "clean": "hexo clean",
+    "server": "hexo server",
+    "build": "hexo generate"
+  },
+  "hexo": {
+    "version": "5.4.0"
+  },
+  "dependencies": {
+    "hexo": "latest",
+    "hexo-server": "latest",
+    "hexo-generator-archive": "latest",
+    "hexo-generator-category": "latest",
+    "hexo-generator-index": "latest",
+    "hexo-generator-tag": "latest",
+    "hexo-renderer-ejs": "latest",
+    "hexo-renderer-markdown-it": "latest",
+    "hexo-renderer-stylus": "latest"
+  }
+}

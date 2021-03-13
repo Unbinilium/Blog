@@ -1,0 +1,78 @@
+// Color
+:root {
+  --color-background: #fff
+  --color-font: #000
+  --color-basic: #000
+  --color-meta: #ccc
+  --color-link: #999
+  --color-code: #444
+  --color-code-marked: #d6d6d6
+  --color-code-gray: #93a1a1
+  --color-code-green: #71b279
+  --color-code-cyan: #2aa198
+  --color-code-blue: #268bdf
+  --color-code-purple: #b589ff
+  --color-code-orange: #f08d49
+  --color-code-red: #dc322f
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #000
+    --color-font: #ddd
+    --color-basic: #ddd
+    --color-meta: #333
+    --color-link: #999
+    --color-code: #ddd
+    --color-code-marked: #d6d6d6
+    --color-code-gray: #93a1a1
+    --color-code-green: #3eaf7c
+    --color-code-cyan: #2aa198
+    --color-code-blue: #268bd2
+    --color-code-purple: #b589ff
+    --color-code-orange: #f08d49
+    --color-code-red: #dc322f
+  }
+}
+
+// Font
+font-default = "Menlo", "Meslo LG", monospace
+font-serif = "Menlo", "Meslo LG", monospace
+font-mono = "Menlo", "Meslo LG", monospace
+font-title = "Menlo", "Meslo LG", monospace
+
+font-icon = FontAwesome
+font-icon-path = 'fonts/font-awesome/fontawesome-webfont'
+
+@font-face
+  font-family 'FontAwesome'
+  font-style normal
+  font-weight normal
+  src url(font-icon-path.eot?#iefix) format('embedded-opentype'), url(font-icon-path.woff) format('woff'), url(font-icon-path.ttf) format('truetype'), url(font-icon-path.svg#FontAwesomeRegular) format('svg')
+
+@font-face
+  font-family "Meslo LG"
+  font-style normal
+  font-weight normal
+  src local("Meslo LG S Regular"), url("fonts/meslo-LG/MesloLGS-Regular.ttf") format("truetype")
+
+@font-face
+  font-family "Meslo LG"
+  font-style italic
+  font-weight normal
+  src local("Meslo LG S Italic"), url("fonts/meslo-LG/MesloLGS-Italic.ttf") format("truetype")
+
+@font-face
+  font-family "Meslo LG"
+  font-style normal
+  font-weight bold
+  src local("Meslo LG S Bold"), url("fonts/meslo-LG/MesloLGS-Bold.ttf") format("truetype")
+
+@font-face
+  font-family "Meslo LG"
+  font-style italic
+  font-weight bold
+  src local("Meslo LG S Bold Italic"), url("fonts/meslo-LG/MesloLGS-BoldItalic.ttf") format("truetype")
+
+// Width
+page-width = 1200px

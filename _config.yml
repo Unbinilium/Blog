@@ -1,0 +1,98 @@
+# Site
+title: Unbinilium's 📝
+subtitle: My draft papers, also the personal weblog
+description: Unbinilium's draft papers, also the personal weblog
+keywords: ["Unbinilium", "Blog"]
+author: Unbinilium
+language: en
+timezone: UTC
+
+# URL
+url: https://blog.unbinilium.me
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md
+default_layout: post
+filename_case: 0
+render_drafts: true
+post_asset_folder: true
+relative_link: true
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: true
+  tab_replace: "  "
+  wrap: false
+  hljs: false
+markdown:
+  preset: 'default'
+  render:
+    html: true
+    xhtmlOut: true
+    langPrefix: 'language-'
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-cjk-breaks
+    - markdown-it-container
+    - markdown-it-deflist
+    - markdown-it-emoji
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-mark
+    - markdown-it-sub
+    - markdown-it-sup
+
+# Home page setting
+index_generator:
+  path: ""
+  per_page: 8
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+meta_generator: true
+
+# Date / Time format
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: "mtime"
+
+# Pagination
+per_page: 0
+pagination_dir: page
+
+# Include / Exclude file(s)
+include:
+exclude:
+ignore:
+
+# Extensions
+theme: unbinilium
+mathjax: true
+mermaid: true
+
+# Deployment
+deploy:
+  type: ""

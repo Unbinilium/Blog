@@ -1,0 +1,30 @@
+---
+title: Hello World
+date: 2019-08-01
+tag: About
+---
+
+Unbinilium, also known as eka-radium or simply element 120, welcome to my new weblog powered by Hexo.
+
+I'm currently a college student, majored in Mechanical Engineering, robotics field. I'm engrossed in Software Engineer and Graphic Design, also a rhythm games player, dreamed being a freelance software developer.
+
+I started blogging in my Junior journey, as a saying goes "Life is like a Book", I'm writing this blog as my personal knowledge book. Otherwise, better to light one candle than to curse the darkness.
+
+Here not only I record and share my life experience, collect every charming things which worth memorable, but also wrote something meaningful for the time. Furthermore, I aim to build this blog as structured archiving of knowledge base.
+
+<!-- more -->
+
+Anyway I also commit my workspace and social media below, follow me if you satisfied:
+
+- [**Instagram**](https://instagram.com/unbinilium)
+- [**Dribbble**](https://dribbble.com/Unbinilium)
+- [**Github**](https://github.com/Unbinilium)
+- [**Twitter**](https://twitter.com/ekaplutonium)
+- [**Weibo**](https://weibo.com/kotonamirin)
+- [**Bilibili**](https://space.bilibili.com/20854705)
+- [**MONO**](http://mmmono.com/user/55e823c6563c3b2962f08c77/share)
+
+Contact :speech_balloon:
+
+- **Telegram** - [Unbinilium](https://t.me/Unbinilium)
+- **WeChat** - `Unbinilium`
