@@ -450,6 +450,6 @@ import matplotlib.pylab as plt
 label = rev_conv_label(int(y[0]))
 fig, ax = plt.subplots(1)
 ax.imshow(org_img, interpolation = 'nearest', cmap = cm.gray)
-ax.text(5, 5, label, bbox = {'facecolor': 'white', 'pad': 8})
+ax.text(5, 5, label, bbox = { 'facecolor': 'white', 'pad': 8 })
 plt.show()
 ```
