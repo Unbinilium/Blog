@@ -51,19 +51,16 @@ var mermaidConfig = {
     }
 };
 
-function mermaidLoaded() {
+async function mermaidLoaded() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         mermaidConfig['theme'] = 'dark';
     }
     mermaid.initialize(mermaidConfig);
 }
 
-(function () {
-    var mermaidBlocks = document.getElementsByClassName('mermaid')
-    if (mermaidBlocks.length != 0) {
-        var script = document.createElement('script');
-        script.src = 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js';
-        script.setAttribute('onload', 'mermaidLoaded()')
-        document.head.appendChild(script);
-    }
-})();
+if (document.getElementsByClassName('mermaid').length != 0) {
+    var script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js';
+    script.setAttribute('onload', 'mermaidLoaded();')
+    document.head.appendChild(script);
+}

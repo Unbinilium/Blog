@@ -2,7 +2,7 @@
 title: Unbinilium's 📝
 subtitle: My draft papers, also the personal weblog
 description: Unbinilium's draft papers, also the personal weblog
-keywords: ["Unbinilium", "Blog"]
+keywords: ["Unbinilium", "Blog", "📝"]
 author: Unbinilium
 language: en
 timezone: UTC
@@ -37,7 +37,6 @@ highlight:
   auto_detect: true
   tab_replace: "  "
   wrap: false
-  hljs: false
 markdown:
   preset: 'default'
   render:
