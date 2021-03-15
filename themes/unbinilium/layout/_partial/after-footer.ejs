@@ -1,21 +1,2 @@
-<script>
-document.onreadystatechange = async function () {
-  if (document.readyState === 'complete') {
-    var codeBlocks = document.getElementsByClassName('code');
-    for (let i = 0; i != codeBlocks.length; ++i) {
-        codeBlocks[i].setAttribute('translate','no');
-        codeBlocks[i].setAttribute('class','code notranslate');
-    }
-  }
-}
-</script>
-<% if (config.mermaid) { %>
-<script>
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-  async function reload() {
-    if (document.querySelectorAll('[id^=mermaid-]').length != 0) location.reload(false);
-  }
-  reload();
-});
-</script>
-<% } %>
+<script src="/js/sidebar-wrapper.js" async></script>
+<script src="/js/code-notranslate.js" async></script>

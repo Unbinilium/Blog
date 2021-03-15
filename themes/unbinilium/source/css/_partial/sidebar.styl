@@ -8,10 +8,15 @@
     position unset
     float none
     width 100%
+  .widget::-webkit-scrollbar
+    display none
   .widget
     border 1px solid var(--color-basic)
     margin-bottom 30px
     word-wrap break-word
+    max-height var(--sidebar-wrapper-height)
+    overflow-y auto
+    -ms-overflow-style none
     .title
       padding 15px 20px
       font-size 1em
@@ -20,6 +25,8 @@
     .entry
       font-size 0.9em
       padding 15px 20px
+      display flex
+      flex-direction column
     ul, ol, dl
       list-style none
       ul, ol, dl
