@@ -1,23 +1,23 @@
 <!DOCTYPE HTML>
 <html lang="<%= config.language %>">
-  <%- partial('_partial/head') %>
-    <body>
-      <header id="header" class="inner">
-        <%- partial('_partial/header') %>
-      </header>
-      <div id="content" class="inner">
-        <div id="main-col" class="alignleft">
-          <div id="wrapper">
-            <%- body %>
-          </div>
-        </div>
-        <aside id="sidebar" class="alignright">
-          <%- partial('_partial/sidebar', {}, {cache: true}) %>
-        </aside>
-        <div class="clearfix"></div>
+<%- partial('_partial/head') %>
+<body>
+  <header id="header" class="inner">
+    <%- partial('_partial/header') %>
+  </header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft">
+      <div id="wrapper">
+        <%- body %>
       </div>
-      <footer id="footer" class="inner notranslate" translate="no">
-        <%- partial('_partial/footer') %>
-      </footer>
-    </body>
+    </div>
+    <aside id="sidebar" class="alignright">
+    <%- partial('_partial/sidebar', {}, { cache: true }) %>
+      </aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner notranslate" translate="no">
+    <%- partial('_partial/footer') %>
+  </footer>
+</body>
 </html>
