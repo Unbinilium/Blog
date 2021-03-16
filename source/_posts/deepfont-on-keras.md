@@ -292,9 +292,9 @@ augmented_images = ImageDataGenerator(
 
 When the CNN model is trained fully on a synthetic dataset, it witnesses a significant performance drop when testing on real-world data, compared to when applied to another synthetic validation set. It alludes to discrepancies between the distributions of synthetic and real-world examples. They propose to decompose the _N CNN_ layers into two sub-networks to be learned sequentially:
 
-- **Unsupervised cross-domain sub-network C<sub>u</sub>, which consists of the first _K_ layers of _CNN_. It accounts for extracting low-level visual features shared by both syn- thetic and real-world data domains. C<sub>u</sub> will be trained in a unsupervised way, using unlabeled data from both domains. It constitutes the crucial step that further minimizes the low-level feature gap, beyond the previous data augmentation efforts.
+- **Unsupervised cross-domain sub-network C<sub>u</sub>**, which consists of the first _K_ layers of _CNN_. It accounts for extracting low-level visual features shared by both syn- thetic and real-world data domains. C<sub>u</sub> will be trained in a unsupervised way, using unlabeled data from both domains. It constitutes the crucial step that further minimizes the low-level feature gap, beyond the previous data augmentation efforts.
 
-- **Supervised domain-specific sub-network C<sub>s</sub>, which consists of the remaining _N − K_ layers. It accounts for learning higher-level discriminative features for classi- fication, based on the shared features from C<sub>s</sub>. C<sub>s</sub> will be trained in a supervised way, using labeled data from the synthetic domain only.
+- **Supervised domain-specific sub-network C<sub>s</sub>**, which consists of the remaining _N − K_ layers. It accounts for learning higher-level discriminative features for classi- fication, based on the shared features from C<sub>s</sub>. C<sub>s</sub> will be trained in a supervised way, using labeled data from the synthetic domain only.
 
 Firstly we modify the order of picture channels to avoid `OverflowError`.
 
