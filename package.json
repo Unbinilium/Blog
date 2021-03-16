@@ -12,8 +12,6 @@
   },
   "dependencies": {
     "hexo": "latest",
-    "hexo-generator-archive": "latest",
-    "hexo-generator-category": "latest",
     "hexo-generator-index": "latest",
     "hexo-generator-tag": "latest",
     "hexo-renderer-ejs": "latest",
