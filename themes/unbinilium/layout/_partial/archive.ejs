@@ -1,6 +1,5 @@
-<% var title='' ; if (page.tag) title=page.tag; if (page.archive) { if (page.year) title=page.year + (page.month ? '/' +
-  page.month : '' ); else title=__('archive_a'); } %>
-<h2 class="archive-title<% if (page.tag) { %> tag notranslate<% } else if (page.category) { %> category<% } %>" <% if (page.tag) { %>translate="no"<% } %>>
+<% var title='' ; if (page.tag) title=page.tag; %>
+<h2 class="archive-title<% if (page.tag) { %> tag <% } %>" <% if (page.tag) { %>translate="no"<% } %>>
   <%= title %>
 </h2>
 <% if (pagination==2){ %>
