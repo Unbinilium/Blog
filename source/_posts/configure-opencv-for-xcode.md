@@ -103,8 +103,8 @@ chmod +x main.o
 
 - Set Other Linker Flags
 
-Search for **Other Linker Flags** in the search bar.
-Set the other linker flags with all the flag values obtained after running `pkg-config` command above.
+  1. Search for **Other Linker Flags** in the search bar.
+  1. Set the other linker flags with all the flag values obtained after running `pkg-config` command above.
 
 ### Apply permitions
 
