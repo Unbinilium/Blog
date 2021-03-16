@@ -1,9 +1,11 @@
 document.onreadystatechange = async function () {
     if (document.readyState === 'complete') {
-        var codeBlocks = document.getElementsByClassName('code');
-        for (let i = 0; i != codeBlocks.length; ++i) {
-            codeBlocks[i].setAttribute('translate', 'no');
-            codeBlocks[i].setAttribute('class', 'code notranslate');
-        }
+        var codeFigures = document.querySelectorAll('.highlight');
+        codeFigures.forEach(async function (item) {
+            item.setAttribute('translate', 'no');
+            item.querySelectorAll('.comment').forEach(async function (item) {
+                item.setAttribute('translate', 'yes');
+            });
+        });
     }
 }
