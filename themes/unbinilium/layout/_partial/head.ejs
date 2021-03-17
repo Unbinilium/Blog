@@ -7,6 +7,13 @@
     title.push(config.title);
   %>
   <title><%= title.join(' | ') %></title>
+  <link rel="preload" href="/css/style.css" as="style">
+  <% if (config.mathjax) { %>
+  <link rel="preload" href="/js/mathjax-loader.js" as="script">
+  <% } %>
+  <% if (config.mermaid) { %>
+  <link rel="preload" href="/js/mermaid-loader.js" as="script">
+  <% } %>
   <% if (config.author) { %><meta name="author" content="<%= config.author %>"><% } %>
   <% if (page.description) { %>
   <meta name="description" content="<%= page.description %>">
