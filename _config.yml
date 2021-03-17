@@ -79,3 +79,12 @@ pagination_dir: page
 theme: unbinilium
 mathjax: true
 mermaid: true
+html_minifier:
+  collapseBooleanAttributes: true
+  collapseWhitespace: true
+  removeComments: true
+  removeEmptyAttributes: true
+  removeScriptTypeAttributes: true
+  removeStyleLinkTypeAttributes: true
+  minifyJS: true
+  minifyCSS: true
