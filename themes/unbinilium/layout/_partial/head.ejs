@@ -1,5 +1,7 @@
 <head>
-  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <% var title=[];
     if (page.current> 1) title.push(__('page', page.current));
     if (page.title) title.push(page.title);
@@ -24,7 +26,6 @@
   <% } else if (page.content){ %>
   <meta name="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
   <% } %>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <% if (page.title) { %>
   <meta property="og:title" content="<%= page.title %>"/>
   <% } %>
