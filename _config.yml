@@ -8,7 +8,7 @@ language: en
 timezone: UTC
 
 # URL
-url: https://blog.unbinilium.me
+url: https://unbinilium.github.io
 root: /
 permalink: :year/:month/:day/:title/
 pretty_urls:
