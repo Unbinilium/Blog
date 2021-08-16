@@ -1,0 +1,38 @@
+name: Blog Action
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "README.md"
+      - "LICENSE"
+
+jobs:
+  blog-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: "main"
+          
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build _post
+        run: |
+          yarn build
+
+      - name: Deploy gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          user_name: "Unbinilium"
+          user_email: ${{ secrets.EMAIL }}
+          commit_message: ${{ github.event.head_commit.message }}
+          publish_branch: "gh-pages"
+          publish_dir: "public"
+          force_orphan: true
+          enable_jekyll: true
+          keep_files: true
