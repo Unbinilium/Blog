@@ -360,7 +360,7 @@ Here I uses l-reference to avoid copying `v`. It is important to note that if `v
 
 In fact, most of the algorithms in the standard library [algorithm](https://en.cppreference.com/w/cpp/algorithm) after C++17 has already support parallelized and vectorized execution strategies, depending on how it was used to improve the efficiency of your program. I'd love to talk more about `std::accumulate` and `std::reduce`, and `std::transform_reduce` (there's a nice demonstration of this in a timing tool I wrote recently [Timer](https://github.com/Unbinilium/Timer)), but I'll save that for later because of words constraints.
 
-### Say goodbye to multicore huddle
+## Say goodbye to multicore huddle
 
 In a preliminary discussion of multi-threaded architectures, I would like to mention one of the most commonly used concepts in multi-threaded architectures: **the producer and the consumer**. In concurrent processing, the producer produces the data to be processed and the consumer processes the data produced by the producer. Producers and consumers can be one-to-one or many-to-many, and we use thread-safe data structures to connect them. Let's start by looking at the core of our desired architecture (SPSC, which uses a FIFO data structure for synchronization):
 
