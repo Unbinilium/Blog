@@ -81,7 +81,7 @@ void threshold(const uint8_t* _src, uint8_t* dst_, const std::size_t& _size, con
 
 Assuming that the number of data to be processed is an integer multiple of 32, the size of the block (the number of elements to be processed each time) can be set to 32, and the 32 elements to be processed each time are divided into two small blocks `blk_l` and `blk_r`, each containing 16 elements. and deposit them into `dst_`, which means the process have complete. Note that if there is not enough data to process, it is often necessary to fill in the data manually. For data that is not an integer multiple of 32, consider taking a 16 elements chunk at the end of the data and processing the remaining elements (less than 16) in the traditional way.
 
-Fortunately, the third-party library [Carotene](https://github.com/opencv/opencv/tree/master/3rdparty/carotene) of OpenCV already uses the NEON instruction set to accelerate these basic image processing algorithms. Prefer using Carotene for devices with ARM processors (e.g. `threshold` functions, OpenCV uses OpenCL implementation by default).
+Fortunately, the third-party library [Carotene](https://github.com/opencv/opencv/tree/master/3rdparty/carotene) of OpenCV already uses the NEON instruction set to accelerate these basic image processing algorithms. Prefer using Carotene for devices with ARM processors (e.g. `threshold` functions, OpenCV uses OpenCL implementation by default). Last but not least, note that some compiler optimization flags actually do auto-vectorization for us, like `-O1` enables advanced SIMD optimization automatically while compiling.
 
 ### GPU
 
